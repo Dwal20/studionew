@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Diksha's Project Portfolio",
+  title: "Diksha's Digital Domain",
   description: 'A personal portfolio for Diksha showcasing projects, skills, and a professional biography.',
 };
 

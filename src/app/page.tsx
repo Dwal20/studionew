@@ -1,136 +1,146 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
-import { projects, experiences, skills, certifications } from '@/lib/data';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import Header from '@/components/header';
-import Footer from '@/components/footer';
 import ContactForm from '@/components/contact-form';
-
-const TimelineItem = ({ period, company, role, description, skills }: { period: string, company: string, role: string, description: string[], skills: string[] }) => (
-  <div className="grid md:grid-cols-[1fr_2fr_3fr] gap-x-8 gap-y-2 relative pl-8 py-4">
-    <div className="timeline-decorator"></div>
-    <div className="text-muted-foreground">{period}</div>
-    <div>
-      <h3 className="font-semibold">{company}</h3>
-      <p className="text-muted-foreground">{role}</p>
-    </div>
-    <div>
-      <ul className="list-disc pl-4 text-muted-foreground space-y-1">
-        {description.map((item, index) => <li key={index}>{item}</li>)}
-      </ul>
-      <div className="flex flex-wrap gap-2 mt-4">
-        {skills.map((skill) => (
-          <Badge key={skill} variant="secondary" className="bg-purple-100 text-purple-800">{skill}</Badge>
-        ))}
-        {skills.map((skill) => (
-          <Badge key={skill + '2'} variant="secondary" className="bg-green-100 text-green-800">{skill}</Badge>
-        ))}
-      </div>
-    </div>
-  </div>
-);
-
+import { projects, experiences, skills, certifications } from '@/lib/data';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <Header />
-      <main className="mt-16">
-        <section id="portfolio" className="mb-24">
-          <h1 className="text-4xl font-bold text-center mb-2">Project Portfolio</h1>
-          <p className="text-center text-muted-foreground mb-12">A STATEMENT OF MY CAPACITY TO BUILD BEAUTIFUL, INTUITIVE WEB EXPERIENCES FROM THE GROUND UP.</p>
-
-          <Card className="mb-8">
-            <CardHeader className="flex flex-row items-center gap-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8"><path d="M15 12.33a2.33 2.33 0 0 1-1.23 2.05c-1.39.71-3.23.44-4.34-1.07-1.12-1.52-.83-3.66.69-4.77.92-.66 2.1-.81 3.14-.4"/>
-              <path d="M12 22a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10Z"/><path d="m20.66 12-2 .8-1.4-3.5 1.4-3.5 2 .8a10 10 0 0 1 0 5.4Z"/><path d="M3.34 12l2 .8 1.4-3.5L5.34 5.8l-2 .8a10 10 0 0 0 0 5.4Z"/></svg>
-              <h2 className="text-2xl font-semibold">Google</h2>
-            </CardHeader>
-            <CardContent>
-              {projects.map((project, index) => (
-                <div key={index} className="grid md:grid-cols-[1fr_2fr_3fr] gap-x-8 gap-y-2 py-4 border-t">
-                  <div className="text-muted-foreground">{project.period}</div>
-                  <div>
-                    <h3 className="font-semibold">{project.title}</h3>
-                    <p className="text-muted-foreground">{project.subtitle}</p>
-                  </div>
-                  <div>
-                     <ul className="list-disc pl-4 text-muted-foreground space-y-1">
-                      {project.description.map((item, i) => <li key={i}>{item}</li>)}
-                    </ul>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {project.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="bg-purple-100 text-purple-800">{skill}</Badge>
-                      ))}
-                       {project.tools.map((tool) => (
-                        <Badge key={tool} variant="secondary" className="bg-green-100 text-green-800">{tool}</Badge>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-        </section>
-
-        <section id="experience" className="mb-24">
-          <h2 className="text-3xl font-bold mb-8">Start-up & Early Experience</h2>
-           <Card>
-            <CardContent className="pt-6">
-              {experiences.map((exp, index) => (
-                <TimelineItem key={index} {...exp} />
-              ))}
-            </CardContent>
-          </Card>
-        </section>
-
-        <section id="skills" className="mb-24">
-          <h2 className="text-3xl font-bold mb-8">Technical Skills & Certifications</h2>
-          <Card>
-            <CardContent className="pt-6">
-               <div className="grid md:grid-cols-[1fr_3fr] gap-x-8 gap-y-2 py-4 border-b">
-                <h3 className="font-semibold text-lg">Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="bg-purple-100 text-purple-800">{skill}</Badge>
+      <main>
+        <section className="py-16" id="projects">
+            <div className="text-center">
+                <h2 className="text-3xl font-bold mb-2">Project Portfolio</h2>
+                <p className="text-gray-600 max-w-3xl mx-auto">A showcase of my project experience, highlighting my skills and accomplishments for potential employers.</p>
+            </div>
+          <div className="bg-white rounded-lg shadow-md mt-12 p-8">
+            <div className="flex items-center mb-6">
+              <Image alt="Google logo" className="h-8 mr-4" width="32" height="32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTLZFiupaS6AXsxEw3YokLWsPOVvEwIQf6ybx7MmUPmDJLZ7ZOuHceWZJNqze_0SkYqgxLdwo46wR7g3EUFsS7eDFdmlPi9ONjVWt-16xXvDe6Tjw58BHhLs05uE319fDaO0TKWFMmUjMNMBvKQwW7oN8GXS8WAUyHvQlL1eDUz380Afg9IPW8Op41iODJftx014cMULoSoitEiXgHYsYe5hfGDDDIYMPlsc9ph7f6m0w9ctRyVi_Vg3U3ggZmDSiV_hBbSUOWpo4" />
+              <h3 className="text-2xl font-bold text-left">Google</h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="border-b">
+                    <th className="py-3 pr-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Project Name</th>
+                    <th className="py-3 px-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Time Duration</th>
+                    <th className="py-3 px-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Description</th>
+                    <th className="py-3 pl-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Skills Demonstrated</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {projects.map((project, index) => (
+                    <tr className="border-b" key={index}>
+                      <td className="py-4 pr-4 align-top font-medium">{project.title}</td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600">{project.period}</td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600">
+                        <ul className="list-disc list-inside space-y-1">
+                          {project.description.map((desc, i) => <li key={i}>{desc}</li>)}
+                        </ul>
+                      </td>
+                      <td className="py-4 pl-4 align-top">
+                        <div className="flex flex-wrap gap-2">
+                          {project.skills.map((skill, i) => (
+                            <span key={i} className="skill-tag skill-purple">{skill}</span>
+                          ))}
+                          {project.tools.map((tool, i) => (
+                            <span key={i} className="skill-tag skill-green">{tool}</span>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
                   ))}
-                  {skills.map((skill) => (
-                    <Badge key={skill + '2'} variant="secondary" className="bg-green-100 text-green-800">{skill}</Badge>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-md mt-12 p-8">
+            <h3 className="text-2xl font-bold text-left mb-6">Start-up &amp; Early Experience</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="border-b">
+                    <th className="py-3 pr-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Project Name</th>
+                    <th className="py-3 px-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Time Duration</th>
+                    <th className="py-3 px-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Description</th>
+                    <th className="py-3 pl-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Skills Demonstrated</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {experiences.map((exp, index) => (
+                    <tr className="border-b" key={index}>
+                      <td className="py-4 pr-4 align-top font-medium">
+                        {exp.role}<br /><span className="text-sm text-gray-500">@ {exp.company}</span>
+                      </td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600">{exp.period}</td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600">
+                        <ul className="list-disc list-inside space-y-1">
+                          {exp.description.map((desc, i) => <li key={i}>{desc}</li>)}
+                        </ul>
+                      </td>
+                      <td className="py-4 pl-4 align-top">
+                        <div className="flex flex-wrap gap-2">
+                          {exp.skills.map((skill, i) => (
+                            <span key={i} className="skill-tag skill-purple">{skill}</span>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
                   ))}
-                </div>
-              </div>
-              <div className="grid md:grid-cols-[1fr_3fr] gap-x-8 gap-y-2 py-4">
-                <h3 className="font-semibold text-lg">Certifications</h3>
-                <div className="flex flex-wrap gap-2">
-                  {certifications.map((cert) => (
-                     <Badge key={cert} variant="secondary" className="bg-purple-100 text-purple-800">{cert}</Badge>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </section>
-
-        <section id="about" className="mb-24">
-          <Card className="p-8">
-            <h2 className="text-2xl font-bold text-center mb-4">A bit about myself.</h2>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto">
-              I am a software engineer with a passion for building beautiful and intuitive web experiences. I have experience working with a variety of technologies and I am always looking for new challenges to grow my skills. When I'm not coding, I enjoy hiking, reading, and exploring new coffee shops. I am currently seeking new opportunities where I can make a meaningful impact.
-            </p>
-          </Card>
+        <section className="py-16" id="skills">
+            <h2 className="text-3xl font-bold mb-8 text-center">Technical Skills &amp; Certifications</h2>
+            <div className="bg-white rounded-lg shadow-md p-8">
+                <div className="overflow-x-auto">
+                    <table className="w-full text-left">
+                        <thead>
+                            <tr className="border-b">
+                                <th className="py-3 pr-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Skills</th>
+                                <th className="py-3 pl-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Certifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className="border-b">
+                                <td className="py-4 pr-4 align-top">
+                                    <div className="flex flex-wrap gap-2">
+                                        {skills.map((skill) => (
+                                            <span key={skill} className="skill-tag skill-green">{skill}</span>
+                                        ))}
+                                    </div>
+                                </td>
+                                <td className="py-4 pl-4 align-top">
+                                    <div className="flex flex-wrap gap-2">
+                                        {certifications.map((cert) => (
+                                            <span key={cert} className="skill-tag skill-purple">{cert}</span>
+                                        ))}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
-
-        <section id="contact">
-          <h2 className="text-3xl font-bold text-center mb-2">Get in Touch</h2>
-          <p className="text-center text-muted-foreground mb-8">I'm currently looking for new opportunities. I'm always open to a chat, so please get in touch.</p>
-          <Card className="max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <ContactForm />
-            </CardContent>
-          </Card>
+        <section className="py-16 text-center" id="about">
+          <div className="bg-white rounded-lg shadow-md p-12 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">A bit about myself.</h2>
+            <p className="text-gray-600 leading-relaxed">I am a driven project management professional, passionate about building impactful programs. My journey started in the fast-paced US startup scene, where I developed a keen sense of agility and resourcefulness. Now, as a Project Management Apprentice at Google, I am honing my skills in structured, cross-functional execution on a global scale. I am focused on leveraging this unique blend of experience to solve complex challenges and grow into a successful career.</p>
+          </div>
+        </section>
+        <section className="py-16" id="contact">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold">Get in Touch</h2>
+            <p className="text-gray-600 mt-2 mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-8 max-w-2xl mx-auto">
+            <ContactForm />
+          </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

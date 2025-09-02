@@ -4,6 +4,32 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #F8F9FA;
+  color: #212529;
+}
+
+.primary-accent {
+    color: #5A4BDE;
+}
+.btn-primary {
+    background-color: #5A4BDE;
+    color: white;
+}
+.skill-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+.skill-green {
+    background-color: #D4EDDA;
+    color: #155724;
+}
+.skill-purple {
+    background-color: #E2DFFF;
+    color: #5A4BDE;
 }
 
 @layer base {
@@ -14,25 +40,20 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
+    --primary: 275 69% 50%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 270 95% 96%;
+    --accent-foreground: 275 69% 50%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
+    --ring: 275 69% 50%;
     --radius: 0.5rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
   }
 
   .dark {
@@ -55,11 +76,6 @@ body {
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 0 0% 98%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
   }
 }
 
@@ -70,25 +86,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.timeline-decorator {
-  position: absolute;
-  left: 0;
-  top: 5px;
-  height: 100%;
-  width: 1px;
-  background-color: hsl(var(--border));
-}
-
-.timeline-decorator::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 9px;
-  height: 9px;
-  border-radius: 9999px;
-  background-color: hsl(var(--secondary-foreground));
 }
