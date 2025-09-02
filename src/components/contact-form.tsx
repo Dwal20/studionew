@@ -18,9 +18,7 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
+  message: z.string().optional(),
 });
 
 // This type is inferred from the schema so you don't have to repeat yourself.
@@ -120,9 +118,6 @@ export default function ContactForm() {
           {...form.register("message")}
           className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
         ></textarea>
-         {form.formState.errors.message && (
-            <p className="mt-1 text-sm text-red-600">{form.formState.errors.message.message}</p>
-          )}
       </div>
       <div className="mt-6 text-center">
         <button
