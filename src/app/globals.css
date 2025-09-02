@@ -9,14 +9,14 @@ body {
 }
 
 .primary-accent {
-    color: #4A5568;
+    color: #5A4BDE;
 }
 .btn-primary {
-    background-color: #2D3748;
+    background-color: #5A4BDE;
     color: white;
 }
 .btn-primary:hover {
-    background-color: #1A202C;
+    background-color: #4a3dbd;
 }
 
 .skill-tag {
@@ -28,12 +28,12 @@ body {
     line-height: 1.25;
 }
 .skill-green {
-    background-color: #E2E8F0;
-    color: #2D3748;
+    background-color: #D4EDDA;
+    color: #155724;
 }
 .skill-purple {
-    background-color: #CBD5E0;
-    color: #1A202C;
+    background-color: #E2DFFF;
+    color: #5A4BDE;
 }
 
 @layer base {
@@ -44,7 +44,7 @@ body {
     --card-foreground: 215 15% 15%;
     --popover: 0 0% 100%;
     --popover-foreground: 215 15% 15%;
-    --primary: 215 30% 25%;
+    --primary: 260 80% 60%;
     --primary-foreground: 0 0% 98%;
     --secondary: 210 30% 96%;
     --secondary-foreground: 215 15% 15%;
@@ -56,7 +56,7 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 210 20% 89%;
     --input: 210 20% 89%;
-    --ring: 215 30% 25%;
+    --ring: 260 80% 60%;
     --radius: 0.5rem;
   }
 
