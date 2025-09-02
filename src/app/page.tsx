@@ -1,6 +1,6 @@
 import Header from '@/components/header';
 import ContactForm from '@/components/contact-form';
-import { projects, experiences, skills, certifications } from '@/lib/data';
+import { projects, experiences, certifications } from '@/lib/data';
 import Image from 'next/image';
 
 export default function Home() {
@@ -28,9 +28,9 @@ export default function Home() {
                 </thead>
                 <tbody>
                   {projects.map((project, index) => (
-                    <tr className="border-b" key={index}>
+                    <tr className={`border-b ${index === projects.length - 1 ? 'border-b-0' : ''}`} key={index}>
                       <td className="py-4 pr-4 align-top font-medium">{project.title}</td>
-                      <td className="py-4 px-4 align-top text-sm text-gray-600">{project.period}</td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: project.period.replace(/\n/g, '<br/>') }}></td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
                           {project.description.map((desc, i) => <li key={i}>{desc}</li>)}
@@ -39,10 +39,7 @@ export default function Home() {
                       <td className="py-4 pl-4 align-top">
                         <div className="flex flex-wrap gap-2">
                           {project.skills.map((skill, i) => (
-                            <span key={i} className="skill-tag skill-purple">{skill}</span>
-                          ))}
-                          {project.tools.map((tool, i) => (
-                            <span key={i} className="skill-tag skill-green">{tool}</span>
+                            <span key={i} className={`skill-tag ${ i % 2 === 0 ? 'skill-purple' : 'skill-green'}`}>{skill}</span>
                           ))}
                         </div>
                       </td>
@@ -66,11 +63,11 @@ export default function Home() {
                 </thead>
                 <tbody>
                   {experiences.map((exp, index) => (
-                    <tr className="border-b" key={index}>
+                    <tr className={`border-b ${index === experiences.length - 1 ? 'border-b-0' : ''}`} key={index}>
                       <td className="py-4 pr-4 align-top font-medium">
                         {exp.role}<br /><span className="text-sm text-gray-500">@ {exp.company}</span>
                       </td>
-                      <td className="py-4 px-4 align-top text-sm text-gray-600">{exp.period}</td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: exp.period.replace(/\n/g, '<br/>') }}></td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
                           {exp.description.map((desc, i) => <li key={i}>{desc}</li>)}
@@ -79,7 +76,7 @@ export default function Home() {
                       <td className="py-4 pl-4 align-top">
                         <div className="flex flex-wrap gap-2">
                           {exp.skills.map((skill, i) => (
-                            <span key={i} className="skill-tag skill-purple">{skill}</span>
+                             <span key={i} className={`skill-tag ${ i % 2 === 0 ? 'skill-purple' : 'skill-green'}`}>{skill}</span>
                           ))}
                         </div>
                       </td>
@@ -97,27 +94,29 @@ export default function Home() {
                     <table className="w-full text-left">
                         <thead>
                             <tr className="border-b">
-                                <th className="py-3 pr-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Skills</th>
-                                <th className="py-3 pl-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Certifications</th>
+                                <th className="py-3 pr-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Course/Certification</th>
+                                <th className="py-3 px-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Description</th>
+                                <th className="py-3 pl-4 font-semibold text-xs text-gray-500 uppercase tracking-wider">Core Competencies &amp; Skills Gained</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-b">
-                                <td className="py-4 pr-4 align-top">
-                                    <div className="flex flex-wrap gap-2">
-                                        {skills.map((skill) => (
-                                            <span key={skill} className="skill-tag skill-green">{skill}</span>
-                                        ))}
-                                    </div>
-                                </td>
-                                <td className="py-4 pl-4 align-top">
-                                    <div className="flex flex-wrap gap-2">
-                                        {certifications.map((cert) => (
-                                            <span key={cert} className="skill-tag skill-purple">{cert}</span>
-                                        ))}
-                                    </div>
-                                </td>
-                            </tr>
+                            {certifications.map((cert, index) => (
+                                <tr className={`border-b ${index === certifications.length - 1 ? 'border-b-0' : ''}`} key={index}>
+                                    <td className="py-4 pr-4 align-top font-medium">{cert.title}</td>
+                                    <td className="py-4 px-4 align-top text-sm text-gray-600">
+                                      <ul className="list-disc list-inside space-y-1">
+                                          {cert.description.map((desc, i) => <li key={i}>{desc}</li>)}
+                                      </ul>
+                                    </td>
+                                    <td className="py-4 pl-4 align-top">
+                                        <div className="flex flex-wrap gap-2">
+                                            {cert.skills.map((skill, i) => (
+                                                <span key={i} className={`skill-tag ${ i % 2 === 0 ? 'skill-purple' : 'skill-green'}`}>{skill}</span>
+                                            ))}
+                                        </div>
+                                    </td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
