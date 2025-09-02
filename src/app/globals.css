@@ -9,12 +9,16 @@ body {
 }
 
 .primary-accent {
-    color: #5A4BDE;
+    color: #4A5568;
 }
 .btn-primary {
-    background-color: #5A4BDE;
+    background-color: #2D3748;
     color: white;
 }
+.btn-primary:hover {
+    background-color: #1A202C;
+}
+
 .skill-tag {
     display: inline-block;
     padding: 0.25rem 0.75rem;
@@ -24,57 +28,57 @@ body {
     line-height: 1.25;
 }
 .skill-green {
-    background-color: #D4EDDA;
-    color: #155724;
+    background-color: #E2E8F0;
+    color: #2D3748;
 }
 .skill-purple {
-    background-color: #E2DFFF;
-    color: #5A4BDE;
+    background-color: #CBD5E0;
+    color: #1A202C;
 }
 
 @layer base {
   :root {
-    --background: 240 10% 99%;
-    --foreground: 240 10% 3.9%;
+    --background: 210 20% 98%;
+    --foreground: 215 15% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 215 15% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 275 69% 50%;
+    --popover-foreground: 215 15% 15%;
+    --primary: 215 30% 25%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 270 95% 96%;
-    --accent-foreground: 275 69% 50%;
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 215 15% 15%;
+    --muted: 210 30% 96%;
+    --muted-foreground: 215 10% 45%;
+    --accent: 210 30% 90%;
+    --accent-foreground: 215 15% 15%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 275 69% 50%;
+    --border: 210 20% 89%;
+    --input: 210 20% 89%;
+    --ring: 215 30% 25%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 215 30% 15%;
     --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+    --card: 215 30% 15%;
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
+    --popover: 215 30% 15%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
+    --primary-foreground: 215 15% 15%;
+    --secondary: 215 25% 25%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
+    --muted: 215 25% 25%;
+    --muted-foreground: 215 10% 65%;
+    --accent: 215 25% 25%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 215 25% 25%;
+    --input: 215 25% 25%;
     --ring: 0 0% 98%;
   }
 }
