@@ -8,11 +8,9 @@ export default function Home() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <Header />
       <main>
-        <section className="py-16" id="projects">
-            <div className="text-center">
-                <h2 className="text-3xl font-bold mb-2">Project Portfolio</h2>
-                <p className="text-gray-600 max-w-3xl mx-auto">A showcase of my project experience, highlighting my skills and accomplishments for potential employers.</p>
-            </div>
+        <section className="py-16 text-center" id="projects">
+            <h2 className="text-3xl font-bold mb-2">Project Portfolio</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">A showcase of my project experience, highlighting my skills and accomplishments for potential employers.</p>
           <div className="bg-white rounded-lg shadow-md mt-12 p-8">
             <div className="flex items-center mb-6">
               <Image alt="Google logo" className="h-8 mr-4" width="32" height="32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTLZFiupaS6AXsxEw3YokLWsPOVvEwIQf6ybx7MmUPmDJLZ7ZOuHceWZJNqze_0SkYqgxLdwo46wR7g3EUFsS7eDFdmlPi9ONjVWt-16xXvDe6Tjw58BHhLs05uE319fDaO0TKWFMmUjMNMBvKQwW7oN8GXS8WAUyHvQlL1eDUz380Afg9IPW8Op41iODJftx014cMULoSoitEiXgHYsYe5hfGDDDIYMPlsc9ph7f6m0w9ctRyVi_Vg3U3ggZmDSiV_hBbSUOWpo4" />
