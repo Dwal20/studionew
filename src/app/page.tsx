@@ -31,7 +31,7 @@ export default function Home() {
                     <tr className={`border-b ${index === projects.length - 1 ? 'border-b-0' : ''}`} key={index}>
                       <td className="py-4 pr-4 align-top font-medium">{project.title}</td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
-                        <span className="skill-tag skill-green">{project.period.replace(/ -<br\/>/g, ' - ')}</span>
+                        <span className="skill-tag" style={{ backgroundColor: '#E5E7EB', color: '#4B5563' }}>{project.period.replace(/ -<br\/>/g, ' - ')}</span>
                       </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
@@ -70,7 +70,7 @@ export default function Home() {
                         {exp.role}<br /><span className="text-sm text-gray-500">@ {exp.company}</span>
                       </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
-                        <span className="skill-tag skill-green">{exp.period.replace(/ -<br\/>/g, ' - ')}</span>
+                        <span className="skill-tag" style={{ backgroundColor: '#E5E7EB', color: '#4B5563' }}>{exp.period.replace(/ -<br\/>/g, ' - ')}</span>
                       </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
