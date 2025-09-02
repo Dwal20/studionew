@@ -30,7 +30,9 @@ export default function Home() {
                   {projects.map((project, index) => (
                     <tr className={`border-b ${index === projects.length - 1 ? 'border-b-0' : ''}`} key={index}>
                       <td className="py-4 pr-4 align-top font-medium">{project.title}</td>
-                      <td className="py-4 px-4 align-top text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: project.period.replace(/\n/g, '<br/>') }}></td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600">
+                        <span className="skill-tag skill-green">{project.period.replace(/ -<br\/>/g, ' - ')}</span>
+                      </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
                           {project.description.map((desc, i) => <li key={i}>{desc}</li>)}
@@ -67,7 +69,9 @@ export default function Home() {
                       <td className="py-4 pr-4 align-top font-medium">
                         {exp.role}<br /><span className="text-sm text-gray-500">@ {exp.company}</span>
                       </td>
-                      <td className="py-4 px-4 align-top text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: exp.period.replace(/\n/g, '<br/>') }}></td>
+                      <td className="py-4 px-4 align-top text-sm text-gray-600">
+                        <span className="skill-tag skill-green">{exp.period.replace(/ -<br\/>/g, ' - ')}</span>
+                      </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
                           {exp.description.map((desc, i) => <li key={i}>{desc}</li>)}
