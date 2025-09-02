@@ -1,48 +1,67 @@
 export const projects = [
     {
-        title: "E-commerce Platform",
-        description: "A full-stack e-commerce website with features like product catalog, shopping cart, and user authentication.",
-        skills: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-        link: "#",
-        image: "https://picsum.photos/600/401"
+        period: "April 2018 - Present",
+        title: "Gmail Spam & Abuse",
+        subtitle: "Staff Software Engineer",
+        description: [
+            "Architected and developed machine learning infrastructure for classifying messages for Google products.",
+            "Owned and landed large-scale global ranking changes by running experiments and analyzing results.",
+        ],
+        skills: ["Project Management", "Agile Development"],
+        tools: ["C++", "Python", "Google Cloud", "BigQuery"]
     },
     {
-        title: "Portfolio Website Builder",
-        description: "A tool for developers to create and deploy their personal portfolio websites with ease using various templates.",
-        skills: ["TypeScript", "React", "Firebase", "Styled-Components"],
-        link: "#",
-        image: "https://picsum.photos/600/402"
-    },
-    {
-        title: "Task Management App",
-        description: "A collaborative task management application with real-time updates and a drag-and-drop interface.",
-        skills: ["Vue.js", "GraphQL", "PostgreSQL", "WebSocket"],
-        link: "#",
-        image: "https://picsum.photos/600/403"
+        period: "May 2014 - April 2018",
+        title: "Counter-Abuse Technology",
+        subtitle: "Senior Software Engineer",
+        description: [
+            "Built infrastructure to protect users from phishing, malware, and other forms of abuse.",
+            "Launched user-facing security features to millions of users.",
+        ],
+        skills: ["System Design", "User Security"],
+        tools: ["Java", "JavaScript", "MySQL", "Google Kubernetes Engine"]
     },
 ];
 
-export const skills = {
-    technical: [
-        "JavaScript (ES6+)",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Node.js",
-        "Express",
-        "Python",
-        "Django",
-        "SQL",
-        "PostgreSQL",
-        "MongoDB",
-        "HTML5 & CSS3",
-        "Tailwind CSS",
-        "Git & GitHub",
-        "Docker",
-    ],
-    certifications: [
-        { name: "Certified JavaScript Developer", issuer: "Tech Certification Inc." },
-        { name: "Advanced React Professional", issuer: "Web Dev Academy" },
-        { name: "Cloud Practitioner", issuer: "Cloud Services Provider" },
-    ]
-};
+export const experiences = [
+    {
+        period: "Jan 2013 - April 2014",
+        company: "Quixey",
+        role: "Software Engineer",
+        description: [
+            "Worked on a mobile search engine, enabling users to find apps to perform specific actions.",
+            "Implemented new ranking signals and improved search quality.",
+        ],
+        skills: ["Search Quality", "Ranking", "Data Analysis"],
+    },
+    {
+        period: "May 2012 - Aug 2012",
+        company: "AT&T",
+        role: "Software Engineering Intern",
+        description: [
+            "Developed an Android application for managing mobile data usage.",
+        ],
+        skills: ["Android Development", "Mobile Applications"],
+    },
+];
+
+export const skills = [
+    "C++",
+    "Python",
+    "Java",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "SQL",
+    "NoSQL",
+    "Google Cloud",
+    "Kubernetes",
+    "System Design",
+    "Machine Learning",
+];
+
+export const certifications = [
+    "Google Cloud Certified - Professional Data Engineer",
+    "Google Cloud Certified - Professional Machine Learning Engineer",
+    "Certified Kubernetes Application Developer (CKAD)",
+];

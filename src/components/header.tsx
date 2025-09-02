@@ -2,15 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
+  { href: '#portfolio', label: 'Portfolio' },
+  { href: '#experience', label: 'Experience' },
   { href: '#skills', label: 'Skills' },
+  { href: '#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -27,13 +28,13 @@ export default function Header() {
   }, []);
 
   const NavLinks = ({ className }: { className?: string }) => (
-    <nav className={cn("flex items-center gap-4", className)}>
+    <nav className={cn("flex items-center gap-6", className)}>
       {navItems.map((item) => (
         <Link
           key={item.label}
           href={item.href}
           onClick={() => setIsMobileMenuOpen(false)}
-          className="font-medium text-foreground/80 hover:text-primary transition-colors"
+          className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
         >
           {item.label}
         </Link>
@@ -48,8 +49,7 @@ export default function Header() {
     )}>
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <Code className="h-6 w-6 text-primary" />
-          <span className="font-headline">Diksha's Digital Domain</span>
+          <span className="font-semibold">Diksha's Portfolio</span>
         </Link>
 
         <div className="hidden md:flex">

@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -67,16 +66,16 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField
             control={form.control}
             name="name"
             render={({ field }) => (
                 <FormItem>
-                <FormLabel>Name</FormLabel>
+                <FormLabel>Your Name</FormLabel>
                 <FormControl>
-                    <Input placeholder="Your Name" {...field} />
+                    <Input {...field} />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
@@ -87,9 +86,9 @@ export default function ContactForm() {
             name="email"
             render={({ field }) => (
                 <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>Email Address</FormLabel>
                 <FormControl>
-                    <Input placeholder="your.email@example.com" {...field} />
+                    <Input {...field} />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
@@ -104,7 +103,6 @@ export default function ContactForm() {
               <FormLabel>Message</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Let me know how I can help!"
                   className="min-h-[120px]"
                   {...field}
                 />
@@ -113,7 +111,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full" disabled={isPending}>
+        <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white" disabled={isPending}>
           {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
           Send Message
         </Button>
