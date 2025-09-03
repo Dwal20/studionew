@@ -87,7 +87,11 @@ const STRATEGIC_SKILLS = [
     "Automation Strategy",
     "Product Liaison",
     "Knowledge Management",
-    "Client-Specific Analysis"
+    "Client-Specific Analysis",
+    "Vendor Management",
+    "OPEX Management",
+    "Strategic Influence",
+    "Go-to-Market Strategy"
 ];
 
 const EXECUTION_SKILLS = [
@@ -137,7 +141,8 @@ const EXECUTION_SKILLS = [
     "Time Management & Efficiency",
     "Compliance Management",
     "Project Impact Measurement",
-    "Process Scalability"
+    "Process Scalability",
+    "Insight Generation Process Scalability"
 ];
 
 const DATA_SKILLS = [
