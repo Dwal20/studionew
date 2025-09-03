@@ -35,7 +35,8 @@ body {
     background-color: #00838F; /* Teal Blue */
 }
 .skill-data {
-    background-color: #DAA520; /* Goldenrod */
+    background-color: #caf0f8;
+    color: #212529;
 }
 .skill-default {
     background-color: #A9A9A9;
