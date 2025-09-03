@@ -29,8 +29,9 @@ body {
     color: white;
 }
 .skill-strategic {
-    background-color: #98c1d9;
-    color: #34568B;
+    background-color: #94b3f4;
+    color: #092661;
+    border: 1px solid #092661;
 }
 .skill-execution {
     background-color: #fffbe0;
