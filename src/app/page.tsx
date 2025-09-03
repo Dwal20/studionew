@@ -2,7 +2,25 @@ import Header from '@/components/header';
 import ContactForm from '@/components/contact-form';
 import { projects, experiences, certifications } from '@/lib/data';
 import Image from 'next/image';
-import { getSkillClass } from '@/lib/skills';
+import { getSkillClass, SKILL_CATEGORIES } from '@/lib/skills';
+
+const skillCategoryOrder = {
+  [SKILL_CATEGORIES.STRATEGIC]: 1,
+  [SKILL_CATEGORIES.EXECUTION]: 2,
+  [SKILL_CATEGORIES.DATA]: 3,
+  [SKILL_CATEGORIES.DEFAULT]: 4,
+};
+
+const sortSkills = (skills: string[]) => {
+  return [...skills].sort((a, b) => {
+    const classA = getSkillClass(a);
+    const classB = getSkillClass(b);
+    const orderA = skillCategoryOrder[classA as keyof typeof skillCategoryOrder] || 99;
+    const orderB = skillCategoryOrder[classB as keyof typeof skillCategoryOrder] || 99;
+    return orderA - orderB;
+  });
+};
+
 
 export default function Home() {
   return (
@@ -41,7 +59,7 @@ export default function Home() {
                       </td>
                       <td className="py-4 pl-4 align-top">
                         <div className="flex flex-wrap gap-2">
-                          {project.skills.map((skill, i) => (
+                          {sortSkills(project.skills).map((skill, i) => (
                             <span key={i} className={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
                           ))}
                         </div>
@@ -80,7 +98,7 @@ export default function Home() {
                       </td>
                       <td className="py-4 pl-4 align-top">
                         <div className="flex flex-wrap gap-2">
-                          {exp.skills.map((skill, i) => (
+                          {sortSkills(exp.skills).map((skill, i) => (
                              <span key={i} className={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
                           ))}
                         </div>
@@ -115,7 +133,7 @@ export default function Home() {
                                     </td>
                                     <td className="py-4 pl-4 align-top">
                                         <div className="flex flex-wrap gap-2">
-                                            {cert.skills.map((skill, i) => (
+                                            {sortSkills(cert.skills).map((skill, i) => (
                                                 <span key={i} className={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
                                             ))}
                                         </div>
