@@ -1,12 +1,22 @@
 export const projects = [
     {
+        period: "Jan 20, 2025 -<br/>Ongoing",
+        title: "Vendor Management",
+        description: [
+            "Managed the end-to-end lifecycle for 4 major partners and their network of 100+ agents, ensuring strict SLA adherence and rigorous performance benchmarking against key compliance metrics.",
+            "Improved vendor performance by implementing data-driven evaluation frameworks and strategic actions plan",
+            "Fostered collaboration across global cross-functional teams to drive operational excellence and achieve strategic business objectives."
+        ],
+        skills: ["Vendor Lifecycle Management", "Contract Management", "Performance Benchmarking", "KPI Monitoring & Analysis", "Compliance Management", "Scale Management", "Data-Driven Strategy", "Framework Development", "Strategic Planning", "Global Communication", "Operational Excellence", "Strategic Alignment"],
+    },
+    {
         period: "Dec 1, 2024 -<br/>Apr 15, 2025",
         title: "Change Management & Risk Governance",
         description: [
             "Led vendor transition programs, ensuring strategic alignment, risk governance, and operational efficiency post-reorg",
             "Ensured quality, customer satisfaction (CSAT) & policy compliance through clear communication & critical support",
         ],
-        skills: ["Program Management", "Change Management", "Risk Governance", "Strategic Alignment", "Quality Assurance", "CSAT Management", "Policy Compliance", "Stakeholder Communication"],
+        skills: ["Program Management", "Change Management", "Risk Assessment", "Strategic Alignment", "Quality Assurance", "CSAT Management", "Policy Compliance", "Stakeholder Communication", "Operational Planning", "Customer Experience Management", "Policy Compliance", "Crisis Management"],
     },
     {
         period: "Oct 1, 2024 -<br/>Mar 31, 2025",
@@ -15,7 +25,7 @@ export const projects = [
             "Empowering a project for 100% RCA of TRT missed cases in collaboration with Quality and Tools teams",
             "Led initiatives in developing effective solutions, building PRDs and proactively tracked AI and timelines",
         ],
-        skills: ["Process Improvement", "Root Cause Analysis (RCA)", "Solution Design", "Product Requirement Docs (PRD)", "Project Leadership", "Technical Collaboration"],
+        skills: ["Process Automation", "Root Cause Analysis (RCA)", "Solution Design", "Product Requirement Docs", "Project Leadership", "Technical Collaboration", "Technical Project Management", "Documentation Designing", "Solution Design", "Agile Project Management"],
     },
     {
         period: "Jul 20, 2024 -<br/>Ongoing",
@@ -24,7 +34,7 @@ export const projects = [
             "Leading automated translations over manual translations yielding efficiency savings of $180k+",
             "Facilitated smooth collaboration between product & partner teams, tracking timeliness and effectiveness.",
         ],
-        skills: ["Automation", "Business Process Improvement", "Cost-Benefit Analysis", "Project Implementation", "Stakeholder Management", "Product Management", "Performance Tracking"],
+        skills: ["AI Integration", "Business Process Improvement", "Cost-Benefit Analysis", "Project Impact Measurement", "Stakeholder Management", "Product Management", "Performance Tracking", "Automation Strategy", "Product Liaison"],
     },
     {
         period: "Aug 1, 2024 -<br/>Oct 31, 2024",
@@ -33,7 +43,7 @@ export const projects = [
             "Finalized HC requirements, calculated the operation expenditure and ensured alignment with the finance team",
             "Conducted data analysis, visualization, and facilitated team communication to drive execution",
         ],
-        skills: ["Financial Planning", "Budgeting (OPEX)", "Headcount Planning", "Data Analysis", "Data Visualization", "Strategic Communication", "Execution Planning"],
+        skills: ["Financial Planning & Analysis (FP&A)", "Headcount Planning", "Budgeting", "OPEX Management", "Financial Modeling", "Data Analysis", "Data Visualization", "Strategic Communication", "Execution Planning"],
     },
     {
         period: "Oct 15, 2024 -<br/>Dec 31, 2024",
@@ -42,16 +52,16 @@ export const projects = [
             "Assessed missed opportunity for clients improving their campaign performance, fueling a client’s 43% conversion",
             "Authored missed opportunity analysis for H&M, Nykaa & Clovia and added 50+ Ads title logics to the playbook",
         ],
-        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development"],
+        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Client Impact Analysis", "Knowledge Management", "Client-Specific Analysis"],
     },
     {
         period: "Apr 1, 2024 -<br/>Aug 20, 2025",
         title: "Business Reviews",
         description: [
-            "Lead, drive and ensure timelines and deliverables of SDM team’s weekly/ monthly / quarterly business reviews",
+            "Lead, drive and scale the deliverables, strategic agenda design & timeliness of team's periodic business reviews",
             "Presented data-driven insights to the SDM leadership team, providing actionable recommendations that directly informed corrective action plans and strategic vendor management decisions.",
         ],
-        skills: ["Leadership", "Project Management", "Data Storytelling", "Strategic Influence", "Business Acumen", "Stakeholder Communication", "Reporting", "Insight Generation"],
+        skills: ["Leadership", "Project Management", "Data Storytelling", "Strategic Influence", "Business Acumen", "Stakeholder Communication", "Reporting", "Insight Generation Process Scalability", "Deliverable Management", "Time Management & Efficiency"],
     }
 ];
 
