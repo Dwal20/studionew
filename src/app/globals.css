@@ -29,7 +29,8 @@ body {
     color: white;
 }
 .skill-strategic {
-    background-color: #34568B; /* Professional Blue */
+    background-color: #a69cac;
+    color: #34568B;
 }
 .skill-execution {
     background-color: #00838F; /* Teal Blue */
