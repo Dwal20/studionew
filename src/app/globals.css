@@ -34,7 +34,8 @@ body {
 }
 .skill-execution {
     background-color: #fffbe0;
-    color: #a69cac;
+    color: #FFA500;
+    border: 1px solid #FFA500;
 }
 .skill-data {
     background-color: #caf0f8;
