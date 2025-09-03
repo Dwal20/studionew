@@ -142,7 +142,9 @@ const EXECUTION_SKILLS = [
     "Compliance Management",
     "Project Impact Measurement",
     "Process Scalability",
-    "Insight Generation Process Scalability"
+    "Insight Generation Process Scalability",
+    "Project Management",
+    "Process Optimization"
 ];
 
 const DATA_SKILLS = [
