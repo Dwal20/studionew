@@ -2,6 +2,7 @@ import Header from '@/components/header';
 import ContactForm from '@/components/contact-form';
 import { projects, experiences, certifications } from '@/lib/data';
 import Image from 'next/image';
+import { getSkillClass } from '@/lib/skills';
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
                     <tr className={`border-b ${index === projects.length - 1 ? 'border-b-0' : ''}`} key={index}>
                       <td className="py-4 pr-4 align-top font-medium">{project.title}</td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
-                        <span className="inline-block px-3 py-1 text-xs font-medium" style={{ backgroundColor: '#E5E7EB', color: '#4B5563' }}>{project.period.replace(/ -<br\/>/g, ' - ')}</span>
+                        <span className="inline-block px-3 py-1 text-xs font-medium" style={{ backgroundColor: '#E5E7EB', color: '#4B5563' }} dangerouslySetInnerHTML={{ __html: project.period }}></span>
                       </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
@@ -41,7 +42,7 @@ export default function Home() {
                       <td className="py-4 pl-4 align-top">
                         <div className="flex flex-wrap gap-2">
                           {project.skills.map((skill, i) => (
-                            <span key={i} className={`skill-tag ${ i % 2 === 0 ? 'skill-purple' : 'skill-green'}`}>{skill}</span>
+                            <span key={i} className={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
                           ))}
                         </div>
                       </td>
@@ -70,7 +71,7 @@ export default function Home() {
                         {exp.role}<br /><span className="text-sm text-gray-500">@ {exp.company}</span>
                       </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
-                        <span className="inline-block px-3 py-1 text-xs font-medium" style={{ backgroundColor: '#E5E7EB', color: '#4B5563' }}>{exp.period.replace(/ -<br\/>/g, ' - ')}</span>
+                        <span className="inline-block px-3 py-1 text-xs font-medium" style={{ backgroundColor: '#E5E7EB', color: '#4B5563' }} dangerouslySetInnerHTML={{ __html: exp.period }}></span>
                       </td>
                       <td className="py-4 px-4 align-top text-sm text-gray-600">
                         <ul className="list-disc list-inside space-y-1">
@@ -80,7 +81,7 @@ export default function Home() {
                       <td className="py-4 pl-4 align-top">
                         <div className="flex flex-wrap gap-2">
                           {exp.skills.map((skill, i) => (
-                             <span key={i} className={`skill-tag ${ i % 2 === 0 ? 'skill-purple' : 'skill-green'}`}>{skill}</span>
+                             <span key={i} className={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
                           ))}
                         </div>
                       </td>
@@ -115,7 +116,7 @@ export default function Home() {
                                     <td className="py-4 pl-4 align-top">
                                         <div className="flex flex-wrap gap-2">
                                             {cert.skills.map((skill, i) => (
-                                                <span key={i} className={`skill-tag ${ i % 2 === 0 ? 'skill-purple' : 'skill-green'}`}>{skill}</span>
+                                                <span key={i} className={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
                                             ))}
                                         </div>
                                     </td>

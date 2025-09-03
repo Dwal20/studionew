@@ -26,15 +26,22 @@ body {
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 1.25;
+    color: white;
 }
-.skill-green {
-    background-color: #D4EDDA;
-    color: #155724;
+.skill-strategic {
+    background-color: #3D7C80;
 }
-.skill-purple {
-    background-color: #E2DFFF;
-    color: #5A4BDE;
+.skill-execution {
+    background-color: #B5A291;
 }
+.skill-data {
+    background-color: #B4785A;
+}
+.skill-default {
+    background-color: #A9A9A9;
+    color: white;
+}
+
 
 @layer base {
   :root {
