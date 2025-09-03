@@ -29,13 +29,13 @@ body {
     color: white;
 }
 .skill-strategic {
-    background-color: #3D7C80;
+    background-color: #228B22; /* Forest Green */
 }
 .skill-execution {
-    background-color: #B5A291;
+    background-color: #4682B4; /* Steel Blue */
 }
 .skill-data {
-    background-color: #B4785A;
+    background-color: #DAA520; /* Goldenrod */
 }
 .skill-default {
     background-color: #A9A9A9;
