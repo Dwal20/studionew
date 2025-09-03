@@ -1,3 +1,4 @@
+
 export const SKILL_CATEGORIES = {
     STRATEGIC: 'skill-strategic',
     EXECUTION: 'skill-execution',
@@ -118,7 +119,6 @@ const EXECUTION_SKILLS = [
     "Solution Design & Framework Development",
     "Solution Design",
     "Framework Development",
-    "Quality Assurance",
     "Technical Collaboration",
     "Technical Project Management",
     "Documentation Designing",
