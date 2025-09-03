@@ -58,8 +58,6 @@ const STRATEGIC_SKILLS = [
     "Project Implementation",
     "Stakeholder Management",
     "Performance Tracking",
-    "Financial Planning",
-    "Budgeting (OPEX)",
     "Headcount Planning",
     "Data Visualization",
     "Strategic Communication",
@@ -83,7 +81,13 @@ const STRATEGIC_SKILLS = [
     "Stakeholder Management & Client Advisory",
     "Service Transition & Operations Management",
     "Google Cloud Platform (GCP) Proficiency",
-    "Backend Development"
+    "Backend Development",
+    "Strategic Planning",
+    "Global Communication",
+    "Automation Strategy",
+    "Product Liaison",
+    "Knowledge Management",
+    "Client-Specific Analysis"
 ];
 
 const EXECUTION_SKILLS = [
@@ -130,7 +134,10 @@ const EXECUTION_SKILLS = [
     "API Integration",
     "Project Leadership",
     "Deliverable Management",
-    "Time Management & Efficiency"
+    "Time Management & Efficiency",
+    "Compliance Management",
+    "Project Impact Measurement",
+    "Process Scalability"
 ];
 
 const DATA_SKILLS = [
@@ -159,7 +166,8 @@ const DATA_SKILLS = [
     "Portfolio Management Principles",
     "Ethical & Professional Standards",
     "Economic Analysis",
-    "Analytical Reporting"
+    "Analytical Reporting",
+    "Budgeting"
 ];
 
 const skillToClassMap: Record<string, string> = {};
