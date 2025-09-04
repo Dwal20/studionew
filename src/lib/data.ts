@@ -5,7 +5,7 @@ export const projects = [
         title: "Vendor Management Consulting & Strategy",
         description: [
             "Managed the end-to-end lifecycle for 4 major partners and their network of 100+ agents, ensuring strict SLA adherence and rigorous performance benchmarking against key compliance metrics.",
-            "Improved vendor performance by implementing data-driven evaluation frameworks and strategic actions plan",
+            "Provided strategic consulting on the partner management lifecycle, developing data-driven framework and action plan that improved vendor performance",
             "Fostered collaboration across global cross-functional teams to drive operational excellence and achieve strategic business objectives."
         ],
         skills: ["Management consulting", "Vendor Lifecycle Management", "Contract Management", "Performance Benchmarking", "KPI Monitoring & Analysis", "Compliance Management", "Scale Management", "Data-Driven Strategy", "Framework Development", "Strategic Planning", "Global Communication", "Operational Excellence", "Strategic Alignment", "Dashboards", "Escalation Management"],
