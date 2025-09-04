@@ -41,6 +41,7 @@ body {
 .skill-data {
     background-color: #caf0f8;
     color: #00838F;
+    border: 1px solid #00838F;
 }
 .skill-default {
     background-color: #A9A9A9;
