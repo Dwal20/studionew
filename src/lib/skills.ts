@@ -92,7 +92,11 @@ const STRATEGIC_SKILLS = [
     "Vendor Management",
     "OPEX Management",
     "Strategic Influence",
-    "Go-to-Market Strategy"
+    "Go-to-Market Strategy",
+    "Macro Definition",
+    "Title Optimization",
+    "Feed Management",
+    "Product Launch Strategy"
 ];
 
 const EXECUTION_SKILLS = [
@@ -174,7 +178,8 @@ const DATA_SKILLS = [
     "Ethical & Professional Standards",
     "Economic Analysis",
     "Analytical Reporting",
-    "Budgeting"
+    "Budgeting",
+    "SQL"
 ];
 
 const skillToClassMap: Record<string, string> = {};
@@ -194,3 +199,5 @@ DATA_SKILLS.forEach(skill => {
 export const getSkillClass = (skill: string): string => {
     return skillToClassMap[skill.toLowerCase()] || SKILL_CATEGORIES.DEFAULT;
 };
+
+    

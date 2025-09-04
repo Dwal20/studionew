@@ -27,7 +27,7 @@ export const projects = [
             "Empowering a project for 100% RCA of TRT missed cases in collaboration with Quality and Tools teams",
             "Led initiatives in developing effective solutions, building PRDs and proactively tracked AI and timelines",
         ],
-        skills: ["Process Automation", "Root Cause Analysis (RCA)", "Solution Design", "Product Requirement Docs", "Project Leadership", "Technical Collaboration", "Technical Project Management", "Documentation Designing", "Solution Design", "Agile Project Management"],
+        skills: ["Process Automation", "Root Cause Analysis (RCA)", "Solution Design", "Product Requirement Docs", "Project Leadership", "Technical Collaboration", "Technical Project Management", "Documentation Designing", "Solution Design", "Agile Project Management", "Macro Definition", "SQL"],
     },
     {
         period: "Jul 20, 2024 -<br/>Ongoing",
@@ -55,7 +55,7 @@ export const projects = [
             "Assessed missed opportunity for clients improving their campaign performance, fueling a client’s 43% conversion",
             "Authored missed opportunity analysis for H&M, Nykaa & Clovia and added 50+ Ads title logics to the playbook",
         ],
-        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Client Impact Analysis", "Knowledge Management", "Client-Specific Analysis"],
+        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Client Impact Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management"],
     },
     {
         period: "Apr 1, 2024 -<br/>Aug 20, 2025",
@@ -100,7 +100,7 @@ export const experiences = [
             "Designed a robust inventory management system and delivery schedule to meet demand.",
             "Standardized repetitive store orders boosting order fulfillment efficiency in the supply chain."
         ],
-        skills: ["Go-to-Market (GTM) Strategy", "Supply Chain Management", "Partnership Development", "Inventory Management", "Revenue Scaling", "Logistics Planning", "Process Standardization", "Operational Efficiency"],
+        skills: ["Go-to-Market (GTM) Strategy", "Supply Chain Management", "Partnership Development", "Inventory Management", "Revenue Scaling", "Logistics Planning", "Process Standardization", "Operational Efficiency", "Product Launch Strategy"],
     },
     {
         period: "Sep 1, 2023 -<br/>Feb 29, 2024",
@@ -186,4 +186,5 @@ export const certifications = [
 // This is kept to avoid breaking the import in page.tsx, but it is not used.
 export const skills: string[] = [];
 
+    
     
