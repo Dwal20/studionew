@@ -88,7 +88,7 @@ export const experiences = [
             "Directed the entire order-to-cash lifecycle for B2B operations in the critical New York market, successfully supporting over $2M in business revenue. Optimized the end-to-end process for order management, from placement and fulfillment to final delivery, ensuring accuracy and timeliness.",
             "Managed various aspects of financial operations, including invoice generation, payment processing, and accounts receivable to ensure healthy cash flow. Served as the key operational point of contact for B2B clients, resolving discrepancies and strengthening relationships to facilitate business growth."
         ],
-        skills: ["B2B Operations Management", "Revenue & P&L Management", "Order-to-Cash (O2C) Management", "Invoice Management & Accounts Receivable", "Financial Process Optimization", "Key Account Management", "Logistics & Fulfillment Oversight"],
+        skills: ["B2B Operations Management", "Revenue & P&L Management", "Order-to-Cash (O2C) Management", "Invoice Management & Accounts Receivable", "Financial Process Optimization", "Key Account Management", "Logistics & Fulfillment Oversight", "Sales Operation"],
     },
     {
         period: "Jan 1, 2023 -<br/>Feb 29, 2024",
