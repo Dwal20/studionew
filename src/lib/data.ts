@@ -55,7 +55,7 @@ export const projects = [
             "Assessed missed opportunity for clients improving their campaign performance, fueling a client’s 43% conversion",
             "Authored missed opportunity analysis for H&M, Nykaa & Clovia and added 50+ Ads title logics to the playbook",
         ],
-        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Client Impact Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management", "Shopping Ads"],
+        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management", "Shopping Ads"],
     },
     {
         period: "Apr 1, 2024 -<br/>Aug 20, 2025",
