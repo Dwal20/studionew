@@ -96,7 +96,9 @@ const STRATEGIC_SKILLS = [
     "Macro Definition",
     "Title Optimization",
     "Feed Management",
-    "Product Launch Strategy"
+    "Product Launch Strategy",
+    "Google Ads",
+    "Shopping Ads"
 ];
 
 const EXECUTION_SKILLS = [

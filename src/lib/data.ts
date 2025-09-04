@@ -17,7 +17,7 @@ export const projects = [
             "Led three vendor transition of 190+ Vendor Agents to six major Google workflows, ensuring strategic alignment, risk governance, and operational efficiency post-reorg",
             "Ensured quality, customer satisfaction (CSAT) & policy compliance through clear communication & critical support",
         ],
-        skills: ["Program Management", "Change Management", "Risk Assessment", "Strategic Alignment", "Quality Assurance", "CSAT Management", "Policy Compliance", "Stakeholder Communication", "Operational Planning", "Customer Experience Management", "Policy Compliance", "Crisis Management"],
+        skills: ["Program Management", "Change Management", "Risk Assessment", "Strategic Alignment", "Quality Assurance", "CSAT Management", "Policy Compliance", "Stakeholder Communication", "Operational Planning", "Customer Experience Management", "Policy Compliance", "Crisis Management", "Google Ads"],
     },
     {
         period: "Oct 1, 2024 -<br/>Mar 31, 2025",
@@ -55,7 +55,7 @@ export const projects = [
             "Assessed missed opportunity for clients improving their campaign performance, fueling a client’s 43% conversion",
             "Authored missed opportunity analysis for H&M, Nykaa & Clovia and added 50+ Ads title logics to the playbook",
         ],
-        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Client Impact Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management"],
+        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Client Impact Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management", "Shopping Ads"],
     },
     {
         period: "Apr 1, 2024 -<br/>Aug 20, 2025",
