@@ -98,7 +98,6 @@ const STRATEGIC_SKILLS = [
     "Title Optimization",
     "Feed Management",
     "Product Launch Strategy",
-    "Sales Operation"
 ];
 
 const EXECUTION_SKILLS = [
@@ -151,7 +150,8 @@ const EXECUTION_SKILLS = [
     "Insight Generation Process Scalability",
     "Project Management",
     "Process Optimization",
-    "Escalation Management"
+    "Escalation Management",
+    "Sales Operation"
 ];
 
 const DATA_SKILLS = [
