@@ -17,7 +17,10 @@ const sortSkills = (skills: string[]) => {
     const classB = getSkillClass(b);
     const orderA = skillCategoryOrder[classA as keyof typeof skillCategoryOrder] || 99;
     const orderB = skillCategoryOrder[classB as keyof typeof skillCategoryOrder] || 99;
-    return orderA - orderB;
+    if (orderA !== orderB) {
+      return orderA - orderB;
+    }
+    return a.localeCompare(b);
   });
 };
 
