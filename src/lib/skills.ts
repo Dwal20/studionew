@@ -96,9 +96,7 @@ const STRATEGIC_SKILLS = [
     "Macro Definition",
     "Title Optimization",
     "Feed Management",
-    "Product Launch Strategy",
-    "Google Ads",
-    "Shopping Ads"
+    "Product Launch Strategy"
 ];
 
 const EXECUTION_SKILLS = [
@@ -181,7 +179,9 @@ const DATA_SKILLS = [
     "Economic Analysis",
     "Analytical Reporting",
     "Budgeting",
-    "SQL"
+    "SQL",
+    "Google Ads",
+    "Shopping Ads"
 ];
 
 const skillToClassMap: Record<string, string> = {};
