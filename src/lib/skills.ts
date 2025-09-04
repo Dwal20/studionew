@@ -7,6 +7,7 @@ export const SKILL_CATEGORIES = {
 };
 
 const STRATEGIC_SKILLS = [
+    "Management consulting",
     "Leadership",
     "Strategic Planning & Influence",
     "Go-to-Market (GTM) Strategy",
@@ -203,5 +204,7 @@ DATA_SKILLS.forEach(skill => {
 export const getSkillClass = (skill: string): string => {
     return skillToClassMap[skill.toLowerCase()] || SKILL_CATEGORIES.DEFAULT;
 };
+
+    
 
     

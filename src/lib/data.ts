@@ -2,13 +2,13 @@
 export const projects = [
     {
         period: "Jan 20, 2025 -<br/>Ongoing",
-        title: "Vendor Management",
+        title: "Vendor Management Consulting & Strategy",
         description: [
             "Managed the end-to-end lifecycle for 4 major partners and their network of 100+ agents, ensuring strict SLA adherence and rigorous performance benchmarking against key compliance metrics.",
             "Improved vendor performance by implementing data-driven evaluation frameworks and strategic actions plan",
             "Fostered collaboration across global cross-functional teams to drive operational excellence and achieve strategic business objectives."
         ],
-        skills: ["Vendor Lifecycle Management", "Contract Management", "Performance Benchmarking", "KPI Monitoring & Analysis", "Compliance Management", "Scale Management", "Data-Driven Strategy", "Framework Development", "Strategic Planning", "Global Communication", "Operational Excellence", "Strategic Alignment", "Dashboards", "Escalation Management"],
+        skills: ["Management consulting", "Vendor Lifecycle Management", "Contract Management", "Performance Benchmarking", "KPI Monitoring & Analysis", "Compliance Management", "Scale Management", "Data-Driven Strategy", "Framework Development", "Strategic Planning", "Global Communication", "Operational Excellence", "Strategic Alignment", "Dashboards", "Escalation Management"],
     },
     {
         period: "Dec 1, 2024 -<br/>Apr 15, 2025",
@@ -55,7 +55,7 @@ export const projects = [
             "Assessed missed opportunity for clients improving their campaign performance, fueling a client’s 43% conversion",
             "Authored missed opportunity analysis for H&M, Nykaa & Clovia and added 50+ Ads title logics to the playbook",
         ],
-        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Client Impact Analysis", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management", "Shopping Ads"],
+        skills: ["Performance Marketing", "Conversion Rate Optimization (CRO)", "Analytical Reporting", "Content Strategy", "E-commerce Strategy", "Playbook Development", "Opportunity Analysis", "Data Analysis", "Knowledge Management", "Client-Specific Analysis", "Title Optimization", "Feed Management", "Shopping Ads"],
     },
     {
         period: "Apr 1, 2024 -<br/>Aug 20, 2025",
@@ -187,4 +187,6 @@ export const certifications = [
 export const skills: string[] = [];
 
     
+    
+
     
