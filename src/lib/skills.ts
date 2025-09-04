@@ -181,7 +181,8 @@ const DATA_SKILLS = [
     "Budgeting",
     "SQL",
     "Google Ads",
-    "Shopping Ads"
+    "Shopping Ads",
+    "Dashboards"
 ];
 
 const skillToClassMap: Record<string, string> = {};

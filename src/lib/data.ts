@@ -8,7 +8,7 @@ export const projects = [
             "Improved vendor performance by implementing data-driven evaluation frameworks and strategic actions plan",
             "Fostered collaboration across global cross-functional teams to drive operational excellence and achieve strategic business objectives."
         ],
-        skills: ["Vendor Lifecycle Management", "Contract Management", "Performance Benchmarking", "KPI Monitoring & Analysis", "Compliance Management", "Scale Management", "Data-Driven Strategy", "Framework Development", "Strategic Planning", "Global Communication", "Operational Excellence", "Strategic Alignment"],
+        skills: ["Vendor Lifecycle Management", "Contract Management", "Performance Benchmarking", "KPI Monitoring & Analysis", "Compliance Management", "Scale Management", "Data-Driven Strategy", "Framework Development", "Strategic Planning", "Global Communication", "Operational Excellence", "Strategic Alignment", "Dashboards"],
     },
     {
         period: "Dec 1, 2024 -<br/>Apr 15, 2025",
