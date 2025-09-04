@@ -1,3 +1,4 @@
+
 export const projects = [
     {
         period: "Jan 20, 2025 -<br/>Ongoing",
@@ -13,7 +14,7 @@ export const projects = [
         period: "Dec 1, 2024 -<br/>Apr 15, 2025",
         title: "Change Management & Risk Governance",
         description: [
-            "Led vendor transition programs, ensuring strategic alignment, risk governance, and operational efficiency post-reorg",
+            "Led three vendor transition of 190+ Vendor Agents to six major Google workflows, ensuring strategic alignment, risk governance, and operational efficiency post-reorg",
             "Ensured quality, customer satisfaction (CSAT) & policy compliance through clear communication & critical support",
         ],
         skills: ["Program Management", "Change Management", "Risk Assessment", "Strategic Alignment", "Quality Assurance", "CSAT Management", "Policy Compliance", "Stakeholder Communication", "Operational Planning", "Customer Experience Management", "Policy Compliance", "Crisis Management"],
@@ -22,6 +23,7 @@ export const projects = [
         period: "Oct 1, 2024 -<br/>Mar 31, 2025",
         title: "Automated RCA Software Model Revamp",
         description: [
+            "Updation of Macro Definitions and SQL expressions",
             "Empowering a project for 100% RCA of TRT missed cases in collaboration with Quality and Tools teams",
             "Led initiatives in developing effective solutions, building PRDs and proactively tracked AI and timelines",
         ],
@@ -49,6 +51,7 @@ export const projects = [
         period: "Oct 15, 2024 -<br/>Dec 31, 2024",
         title: "Shopping Ads Title Playbook",
         description: [
+            "Title Optimization in Collaboration with FeedGen",
             "Assessed missed opportunity for clients improving their campaign performance, fueling a client’s 43% conversion",
             "Authored missed opportunity analysis for H&M, Nykaa & Clovia and added 50+ Ads title logics to the playbook",
         ],
@@ -92,6 +95,7 @@ export const experiences = [
         company: "Quicklly",
         role: "Brand Label Launch & GTM strategy",
         description: [
+            "Strategic launch of 15 brand products",
             "Partnered with 50+ retail chains and scaled the sales revenue to $1M+ in the first year of launching 15 brand products.",
             "Designed a robust inventory management system and delivery schedule to meet demand.",
             "Standardized repetitive store orders boosting order fulfillment efficiency in the supply chain."
@@ -181,3 +185,5 @@ export const certifications = [
 
 // This is kept to avoid breaking the import in page.tsx, but it is not used.
 export const skills: string[] = [];
+
+    
